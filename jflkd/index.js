@@ -1,5 +1,0 @@
-/**
- *
- * description:index.js
- *
- */

@@ -4,13 +4,9 @@ const path = require('path');
 
 const workUrl = process.cwd(); // 当前工作目录
 const param = process.argv[2] || `demo`; // 第一个参数
-let templateUrl2 = `./template`;
-const templateUrl = path.join(__dirname, '/template');
-// if(process.argv[2]){
-//   templateUrl = `${workUrl}/${process.argv[2]}`;
-// }else{
-//  templateUrl = './template';
-// }
+console.log(path.join(__dirname, '/template'))
+let templateUrl = path.join(__dirname, '/template');
+
 fs.mkdir(`${workUrl}/${param}`, () => {
   copyDir(templateUrl, `${workUrl}/${param}`);
 });

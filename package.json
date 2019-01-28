@@ -1,14 +1,14 @@
 {
   "name": "auto-generate-file-dir",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.9",
   "main": "index.js",
+  "description": "auto-generate-file-dir",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "zl123top",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "babel": "^6.23.0"
   },
@@ -17,6 +17,6 @@
     "babel-loader": "^8.0.5"
   },
   "bin": {
-    "auto-generate-file-dir": "bin/index.js"
+    "auto-generate-file-dir": "./index.js"
   }
 }
