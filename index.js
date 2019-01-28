@@ -1,11 +1,17 @@
+#!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
 
 const workUrl = process.cwd(); // 当前工作目录
 const param = process.argv[2] || `demo`; // 第一个参数
-// fs.copyFile(`./template/aaa/vsvmf.js`, `/Users/zhanglin/mySource/auto-generate-file-dir/aaa/aaa/vsvmf.js`,()=>{})
+let templateUrl = `./template`;
+// if(process.argv[2]){
+//   templateUrl = `${workUrl}/${process.argv[2]}`;
+// }else{
+//  templateUrl = './template';
+// }
 fs.mkdir(`${workUrl}/${param}`, () => {
-  copyDir('./template', `${workUrl}/${param}`);
+  copyDir(templateUrl, `${workUrl}/${param}`);
 });
 /**
  *

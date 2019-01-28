@@ -1,6 +1,6 @@
 {
   "name": "auto-generate-file-dir",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5"
+  },
+  "bin": {
+    "auto-generate-file-dir": "bin/index.js"
   }
 }
